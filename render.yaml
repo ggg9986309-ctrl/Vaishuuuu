@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: kiruu-ai
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: STORE_DIR
+        value: .data
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: APP_SECRET
+        sync: false
+      - key: TG_API_ID
+        sync: false
+      - key: TG_API_HASH
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false

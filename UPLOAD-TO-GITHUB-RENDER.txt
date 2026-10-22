@@ -1,0 +1,11 @@
+KIRUU AI — FLAT PROJECT
+
+All project files are in this one folder; there are no source subfolders. Upload every file in this folder to the GitHub repository root. Keep package.json and package-lock.json at root.
+
+Render Build Command: npm install && npm run build
+Render Start Command: npm start
+Health Check Path: /api/health
+
+Set required environment variables in Render dashboard. Never upload a real .env or API keys to GitHub.
+
+Note: flattened imports/configuration were rewritten; run a successful Render build before assuming deployment is verified.
